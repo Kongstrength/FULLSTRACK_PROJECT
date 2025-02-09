@@ -8,7 +8,12 @@ const cookieParser = require("cookie-parser"); // เรียกใช้ cooki
 const fs = require("fs"); // เรียกใช้ file system module
 
 app.use(express.json());// ใช้ middleware สำหรับแปลง request body เป็น JSON
-app.use(cors()); 
+app.use(cors(
+  {
+    origin: true,
+    Credentials: true,
+  }
+)); 
 app.use("/api/v1", apiRouter); // ใช้ router สำหรับเส้นทาง /api/v1
 app.use(
   cors({
