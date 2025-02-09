@@ -1,0 +1,12 @@
+cd frontend
+npm install
+npm run dev
+
+
+npm install --save quasar @quasar/extras
+npm install --save-dev @quasar/vite-plugin sass-embedded@^1.80.2
+
+ทำแค่ 3 อย่าง
+app.vue
+main.js 
+router -> index.js
